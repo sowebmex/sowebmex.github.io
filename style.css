@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+*{
+    font-family: 'Orbitron', sans-serif;
+}
+
+body{
+    background: linear-gradient(90deg, rgba(163, 233, 172, 0.192),rgba(2, 172, 44, 0.233));
+    color: darkred;
+}

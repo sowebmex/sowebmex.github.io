@@ -7,3 +7,7 @@ body{
     background: linear-gradient(90deg, rgba(163, 233, 172, 0.192),rgba(2, 172, 44, 0.233));
     color: darkred;
 }
+
+.xnav{
+    display:block;
+}

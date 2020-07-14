@@ -12,12 +12,24 @@ body{
     display:block;
 }
 
+@media screen and (min-width: 601px) {
+  h1 {
+    font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 5vw;
+    }
+}
+
+
 .headerApp{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows:1fr;
 }
-
 
 
 .menu-btn {

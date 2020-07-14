@@ -3,6 +3,12 @@
     let cancelButton = document.getElementById('cancel');
     let favDialog = document.getElementById('favDialog');
     console.log(updateButton);
+    console.log(screen);
+    if(screen.width<600){
+      document.querySelectorAll("h1").forEach(p=>p.innerHTML="SOWEBMEX");
+    }else{
+      document.querySelectorAll("h1").forEach(p=>p.innerHTML="Soluciones Web Mexicanas");
+    }
     
     // Update button opens a modal dialog
     if(null!==updateButton){

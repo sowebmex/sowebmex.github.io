@@ -12,6 +12,14 @@ body{
     display:block;
 }
 
+.headerApp{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows:1fr;
+}
+
+
+
 .menu-btn {
     position: relative;
     display: flex;

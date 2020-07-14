@@ -4,9 +4,9 @@
     let favDialog = document.getElementById('favDialog');
     console.log(updateButton);
     console.log(screen);
-    alert(screen.width);
+    
     if(screen.width<600){
-      document.querySelectorAll("h1").forEach(p=>p.innerHTML="SOWEBMEX");
+      document.querySelectorAll("h1").forEach(p=>{p.innerHTML="SOWEBMEX";p.style.marginLeft="15px";});
     }else{
       document.querySelectorAll("h1").forEach(p=>p.innerHTML="Soluciones Web Mexicanas");
     }

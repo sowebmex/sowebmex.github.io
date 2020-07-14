@@ -22,6 +22,8 @@
     let cancelButton = document.getElementById('cancel');
     let favDialog = document.getElementById('favDialog');
     let divfooter = document.getElementById("divfooter");
+    let closeDialogBtn = document.getElementById("closeDialogBtn"); 
+
     if(!!divfooter){
       divfooter.innerHTML="SOWEBMEX desde 2020 | "+dateToYMD(sysdate);
     }
@@ -53,17 +55,23 @@
   console.log("Entra**");
 
 const menuBtn = document.querySelector('.menu-btn');
+const dialogOpenClose = function (){
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+    favDialog.showModal();
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+    favDialog.close();
+  }
+}; 
+
 let menuOpen = false;
 if(null!==menuBtn){
-  menuBtn.addEventListener('click', () => {
-    if(!menuOpen) {
-      menuBtn.classList.add('open');
-      menuOpen = true;
-      favDialog.showModal();
-    } else {
-      menuBtn.classList.remove('open');
-      menuOpen = false;
-      favDialog.close();
-    }
-  });
+  menuBtn.addEventListener('click', dialogOpenClose);
+}
+
+if(!!closeDialogBtn){
+  closeDialogBtn.addEventListener('click', dialogOpenClose);
 }

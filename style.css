@@ -122,3 +122,35 @@ footer{
   .menu-btn.open .menu-btn__burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
   }
+
+  dialog{
+    background-color: rgba(36, 41, 67, 0.9);
+    color: var(--footerbg);
+  }
+
+  ul{
+    list-style: none;
+    width: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li{
+    list-style-type: none;
+    width: inherit;
+    margin: 1vh 0 1vh 0;
+    border-top: 2px solid red;
+  }
+
+  ul li:hover{
+    background-color:#ffcc00;
+  }
+
+  ul li a{
+    text-decoration: none;
+    width: inherit;
+    padding: 1vh 0 1vh 0;
+    color:white;
+  }
+
+  

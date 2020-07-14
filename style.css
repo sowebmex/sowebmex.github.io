@@ -11,6 +11,13 @@
   --secondc:#1440B8;
 }
 
+
+main,header,footerr,h1,h2,p{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 body{
    /* background: linear-gradient(90deg, rgba(163, 233, 172, 0.192),rgba(2, 172, 44, 0.233)); */
    /* color: darkred; */
@@ -30,6 +37,9 @@ body{
   h1 {
     font-size: 6vw;
     }
+  footer{
+    font-size: 4vw;
+   }
 }
 
 body{
@@ -39,12 +49,11 @@ body{
 header{
   background-color:var( --headerbg,#FB9902);
   color: var(--primaryc,#0247FE);
-  margin: 0px;
 }
+
 
 main{
   background-color: var(--mainbg,#F7E9D4);
-  margin: 0px;
 }
 
 
@@ -52,7 +61,6 @@ footer{
   background-color: var(--footerbg,#091534);
   color:var( --headerbg,#FB9902);
   text-align: end;
-  margin: 0px;
 }
 
 .headerApp{

@@ -3,9 +3,17 @@
     font-family: 'Orbitron', sans-serif;
 }
 
+:root {
+  --mainbg: #F7E9D4;
+  --headerbg:#FB9902; 
+  --footerbg:#091534;
+  --primaryc:#0247FE;
+  --secondc:#1440B8;
+}
+
 body{
-    background: linear-gradient(90deg, rgba(163, 233, 172, 0.192),rgba(2, 172, 44, 0.233));
-    color: darkred;
+   /* background: linear-gradient(90deg, rgba(163, 233, 172, 0.192),rgba(2, 172, 44, 0.233)); */
+   /* color: darkred; */
 }
 
 .xnav{
@@ -14,16 +22,36 @@ body{
 
 @media screen and (min-width: 601px) {
   h1 {
-    font-size: 4vw;
+    font-size: 3vw;
     }
 }
 
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 5vw;
+    font-size: 6vw;
     }
 }
 
+body{
+  margin: 0px;
+}
+
+header{
+  background-color:var( --headerbg,#FB9902);
+  color: var(--primaryc,#0247FE);
+  margin: 0px;
+}
+
+main{
+  background-color: var(--mainbg,#F7E9D4);
+  margin: 0px;
+}
+
+footer{
+  background-color: var(--footerbg,#091534);
+  color:var( --headerbg,#FB9902);
+  text-align: end;
+}
 
 .headerApp{
   display: grid;
@@ -47,7 +75,7 @@ body{
   .menu-btn__burger {
     width: 50px;
     height: 6px;
-    background: darkred;
+    background:var(--footerbg,#091534);;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255,101,47,.2);
     transition: all .5s ease-in-out;
@@ -58,7 +86,7 @@ body{
     position: absolute;
     width: 50px;
     height: 6px;
-    background: darkred;
+    background:var(--footerbg,#091534);;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255,101,47,.2);
     transition: all .5s ease-in-out;

@@ -1,10 +1,33 @@
+    const dateToYMD = function (date) {
+      var strArray=['Enero'
+                   ,'Febrero'
+                   ,'Marzo'
+                   ,'Abril'
+                   ,'Mayo'
+                   ,'Junio'
+                   ,'Julio'
+                   ,'Agosto'
+                   ,'Septiembre'
+                   ,'Octubre'
+                   ,'Noviembre'
+                   ,'Diciembre'];
+      var d = date.getDate();
+      var m = strArray[date.getMonth()];
+      var y = date.getFullYear();
+      return '' + (d <= 9 ? '0' + d : d) + '-' + m + '-' + y;
+  }
     console.log("Entra*");
+    let sysdate = new Date();
     let updateButton = document.getElementById('updateDetails');
     let cancelButton = document.getElementById('cancel');
     let favDialog = document.getElementById('favDialog');
+    let divfooter = document.getElementById("divfooter");
+    divfooter.innerHTML="SOWEBMEX desde 2020 | "+dateToYMD(sysdate);
+    console.log(sysdate);
     console.log(updateButton);
     console.log(screen);
-    
+    console.log(divfooter);
+
     if(screen.width<600){
       document.querySelectorAll("h1").forEach(p=>{p.innerHTML="SOWEBMEX";p.style.marginLeft="15px";});
     }else{

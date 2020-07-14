@@ -12,10 +12,13 @@
 }
 
 
-main,header,footerr,h1,h2,p{
+main,header,footer,h1,h2,p{
   margin: 0;
-  padding: 0;
   border: 0;
+}
+
+main,header,footer,h1,h2,p{
+  padding: 1vh 1vw 1vh 1vw;
 }
 
 body{

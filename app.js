@@ -22,7 +22,9 @@
     let cancelButton = document.getElementById('cancel');
     let favDialog = document.getElementById('favDialog');
     let divfooter = document.getElementById("divfooter");
-    divfooter.innerHTML="SOWEBMEX desde 2020 | "+dateToYMD(sysdate);
+    if(!!divfooter){
+      divfooter.innerHTML="SOWEBMEX desde 2020 | "+dateToYMD(sysdate);
+    }
     console.log(sysdate);
     console.log(updateButton);
     console.log(screen);

@@ -47,10 +47,12 @@ main{
   margin: 0px;
 }
 
+
 footer{
   background-color: var(--footerbg,#091534);
   color:var( --headerbg,#FB9902);
   text-align: end;
+  margin: 0px;
 }
 
 .headerApp{
